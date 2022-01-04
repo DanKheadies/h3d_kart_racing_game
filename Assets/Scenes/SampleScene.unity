@@ -1579,6 +1579,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7226959, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 885279275, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: circuit
       value: 
@@ -1591,9 +1595,33 @@ PrefabInstance:
       propertyPath: accelSensitivity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1135610533, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1135610534, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22174101314933383, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788004831085165, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788004950953211, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.953
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788005830798567, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788006388336912, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.953
       objectReference: {fileID: 0}
     - target: {fileID: 3127908514022231799, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1607,6 +1635,18 @@ PrefabInstance:
       propertyPath: m_SidewaysFriction.m_Stiffness
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5246728439238929360, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439440585820, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Name
+      value: Driver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439440615548, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.069
+      objectReference: {fileID: 0}
     - target: {fileID: 5246728439448372190, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_ForwardFriction.m_Stiffness
       value: 1
@@ -1614,6 +1654,10 @@ PrefabInstance:
     - target: {fileID: 5246728439448372190, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_SidewaysFriction.m_Stiffness
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439554651575, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5246728439554651579, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_TagString
@@ -1656,6 +1700,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: carMesh
+      value: 
+      objectReference: {fileID: 1678755361}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: isGreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: maxSpeed
       value: 250
       objectReference: {fileID: 0}
@@ -1663,13 +1715,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: playerNamePrefab
+      value: 
+      objectReference: {fileID: 1136048608493140770, guid: c944ab550e541c943a82b84646d1fc53, type: 3}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.9
+      value: 6.89
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1710,6 +1766,10 @@ PrefabInstance:
     - target: {fileID: 5246728440981153136, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Name
       value: GreenCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452410369744681414, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5246728440356141626, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
@@ -1808,6 +1868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7226959, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 885279275, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: circuit
       value: 
@@ -1820,9 +1884,33 @@ PrefabInstance:
       propertyPath: accelSensitivity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1135610533, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1135610534, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22174101314933383, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788004831085165, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788004950953211, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.953
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788005830798567, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788006388336912, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.953
       objectReference: {fileID: 0}
     - target: {fileID: 3127908514022231799, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1836,6 +1924,18 @@ PrefabInstance:
       propertyPath: m_SidewaysFriction.m_Stiffness
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5246728439238929360, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439440585820, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Name
+      value: Driver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439440615548, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.069
+      objectReference: {fileID: 0}
     - target: {fileID: 5246728439448372190, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_ForwardFriction.m_Stiffness
       value: 1
@@ -1843,6 +1943,10 @@ PrefabInstance:
     - target: {fileID: 5246728439448372190, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_SidewaysFriction.m_Stiffness
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439554651575, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5246728439554651579, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_TagString
@@ -1885,6 +1989,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: carMesh
+      value: 
+      objectReference: {fileID: 935936631}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: isOrange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: maxSpeed
       value: 250
       objectReference: {fileID: 0}
@@ -1892,13 +2004,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: playerNamePrefab
+      value: 
+      objectReference: {fileID: 1136048608493140770, guid: c944ab550e541c943a82b84646d1fc53, type: 3}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.02
+      value: 3.38
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1939,6 +2055,10 @@ PrefabInstance:
     - target: {fileID: 5246728440981153136, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Name
       value: OrangeCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452410369744681414, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5246728440356141626, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
@@ -3064,6 +3184,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e614bf48c8657824f86c8c5f68f9e099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &526029553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526029551}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbb90138c5ed09418723c9c436b3e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &545682320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,6 +4089,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e614bf48c8657824f86c8c5f68f9e099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &773335933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773335931}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbb90138c5ed09418723c9c436b3e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &782856008
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,7 +4756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934317259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -0.497, z: -0.078}
+  m_LocalPosition: {x: 0, y: -0.497, z: -0.078}
   m_LocalScale: {x: 0.47487843, y: 0.418616, z: 0.2492}
   m_Children: []
   m_Father: {fileID: 1662472604}
@@ -4680,6 +4824,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934317259}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &935936631 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3127908514022231799, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+  m_PrefabInstance: {fileID: 291130751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &944785577
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,6 +5959,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e614bf48c8657824f86c8c5f68f9e099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1209480909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209480907}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbb90138c5ed09418723c9c436b3e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1213534623
 GameObject:
   m_ObjectHideFlags: 0
@@ -5841,7 +6002,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1456370595}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9384,6 +9545,11 @@ Transform:
   m_Father: {fileID: 1357529079}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1271744075 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3127908514022231799, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+  m_PrefabInstance: {fileID: 5246728440356141615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1343707088
 GameObject:
   m_ObjectHideFlags: 0
@@ -9609,7 +9775,7 @@ RectTransform:
   - {fileID: 594597775}
   - {fileID: 1770079710}
   m_Father: {fileID: 1456370595}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10193,7 +10359,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1456370595}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10520,11 +10686,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1350366381}
   - {fileID: 1213534624}
   - {fileID: 1401745184}
   - {fileID: 1488645756}
   - {fileID: 2108892339}
-  - {fileID: 1350366381}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10654,7 +10820,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1456370595}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10917,7 +11083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497680736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -0.497, z: -0.078}
+  m_LocalPosition: {x: 0, y: -0.497, z: -0.078}
   m_LocalScale: {x: 0.47487843, y: 0.418616, z: 0.2492}
   m_Children: []
   m_Father: {fileID: 1127983871}
@@ -11780,6 +11946,11 @@ Transform:
   m_Father: {fileID: 1357529079}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1678755361 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3127908514022231799, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+  m_PrefabInstance: {fileID: 283929153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1683960879
 GameObject:
   m_ObjectHideFlags: 0
@@ -12092,7 +12263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763744162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -0.497, z: -0.078}
+  m_LocalPosition: {x: 0, y: -0.497, z: -0.078}
   m_LocalScale: {x: 0.47487843, y: 0.418616, z: 0.2492}
   m_Children: []
   m_Father: {fileID: 352387513}
@@ -12639,6 +12810,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830705928}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1843018724 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3127908514022231799, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+  m_PrefabInstance: {fileID: 2135211479}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1856516155
 GameObject:
   m_ObjectHideFlags: 0
@@ -13050,7 +13226,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1456370595}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13198,6 +13374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7226959, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 885279275, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: circuit
       value: 
@@ -13210,9 +13390,33 @@ PrefabInstance:
       propertyPath: accelSensitivity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1135610533, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1135610534, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22174101314933383, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788004831085165, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788004950953211, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.953
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788005830798567, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 984788006388336912, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.953
       objectReference: {fileID: 0}
     - target: {fileID: 3127908514022231799, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13226,6 +13430,18 @@ PrefabInstance:
       propertyPath: m_SidewaysFriction.m_Stiffness
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5246728439238929360, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439440585820, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Name
+      value: Driver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439440615548, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5246728439448372190, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_ForwardFriction.m_Stiffness
       value: 1
@@ -13233,6 +13449,10 @@ PrefabInstance:
     - target: {fileID: 5246728439448372190, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_SidewaysFriction.m_Stiffness
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728439554651575, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5246728439554651579, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_TagString
@@ -13275,6 +13495,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: carMesh
+      value: 
+      objectReference: {fileID: 1843018724}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: isYellow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: maxSpeed
       value: 250
       objectReference: {fileID: 0}
@@ -13282,13 +13510,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: playerNamePrefab
+      value: 
+      objectReference: {fileID: 1136048608493140770, guid: c944ab550e541c943a82b84646d1fc53, type: 3}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.17
+      value: 3.38
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13330,6 +13562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowCar
       objectReference: {fileID: 0}
+    - target: {fileID: 8452410369744681414, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5246728440356141626, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
     - {fileID: 5246728440356141627, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
@@ -13357,9 +13593,13 @@ PrefabInstance:
       propertyPath: accelSensitivity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1135610533, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1135610534, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22174101314933383, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Name
@@ -13454,9 +13694,21 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: carMesh
+      value: 
+      objectReference: {fileID: 1271744075}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: isPurple
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5246728440981153102, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+      propertyPath: playerNamePrefab
+      value: 
+      objectReference: {fileID: 1136048608493140770, guid: c944ab550e541c943a82b84646d1fc53, type: 3}
     - target: {fileID: 5246728440981153103, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -13512,6 +13764,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5246728440356141626, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
     - {fileID: 5246728440356141627, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
+    - {fileID: 5246728439554651577, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 909d2edcc174968449359ee5b59e73bc, type: 3}
 --- !u!146 &5246728440356141628 stripped
 WheelCollider:

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Ghost : MonoBehaviour
@@ -11,7 +9,7 @@ public class Ghost : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rends = this.gameObject.GetComponentsInChildren<Renderer>();
+        rends = gameObject.GetComponentsInChildren<Renderer>();
         foreach (Renderer r in rends)
         {
             r.material.SetFloat("_Mode", 3.0f);

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,8 +11,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        drive = this.GetComponent<Drive>();
-        this.GetComponent<Ghost>().enabled = false;
+        drive = GetComponent<Drive>();
+        GetComponent<Ghost>().enabled = false;
     }
 
     // Update is called once per frame
@@ -42,7 +40,7 @@ public class PlayerController : MonoBehaviour
             drive.rb.gameObject.transform.position = lastPosition;
             drive.rb.gameObject.transform.rotation = lastRotation;
             drive.rb.gameObject.layer = 8;
-            this.GetComponent<Ghost>().enabled = true;
+            GetComponent<Ghost>().enabled = true;
             Invoke("ResetLayer", 3);
         }
 
@@ -57,6 +55,6 @@ public class PlayerController : MonoBehaviour
     void ResetLayer()
     {
         drive.rb.gameObject.layer = 0;
-        this.GetComponent<Ghost>().enabled = false;
+        GetComponent<Ghost>().enabled = false;
     }
 }

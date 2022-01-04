@@ -1,21 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Drive : MonoBehaviour
 {
     public AudioSource highAccel;
     public AudioSource skidSound;
     public GameObject brakeLight;
+    public GameObject playerNamePrefab;
     public GameObject[] wheels;
     public ParticleSystem smokePrefab;
+    public Renderer carMesh;
     public Rigidbody rb;
     public Transform skidTrailPrefab;
     public WheelCollider[] wheelColis;
 
-    private ParticleSystem[] skidSmoke = new ParticleSystem[4];
-    private Transform[] skidTrails = new Transform[4];
+    ParticleSystem[] skidSmoke = new ParticleSystem[4];
+    Transform[] skidTrails = new Transform[4];
 
+    public bool isGreen;
+    public bool isOrange;
+    public bool isPurple;
+    public bool isYellow;
     public float currentSpeed { get { return rb.velocity.magnitude * gearLength; } }
     public float gearLength = 3;
     public float highPitch = 6f;
@@ -26,26 +31,31 @@ public class Drive : MonoBehaviour
     public float torque = 200;
     public int numGears = 5;
 
-    private float currentGearPerc;
-    private float rpm;
-    private int currentGear = 1;
+    float currentGearPerc;
+    float rpm;
+    int currentGear = 1;
+    string[] aiNames = { "Dominus", "Cavax", "Goblin", "Orion", "Fletchner"};
 
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             skidSmoke[i] = Instantiate(smokePrefab);
             skidSmoke[i].Stop();
         }
 
         brakeLight.SetActive(false);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+        GameObject playerName = Instantiate(playerNamePrefab);
+        playerName.GetComponent<NameUIController>().target = rb.gameObject.transform;
 
+        if (GetComponent<AIController>().enabled)
+            playerName.GetComponent<Text>().text = aiNames[Random.Range(0, aiNames.Length)];
+        else 
+            playerName.GetComponent<Text>().text = "Darrow";
+
+        playerName.GetComponent<NameUIController>().carRend = carMesh;
     }
 
     public void CalculateEngineSound()
@@ -118,12 +128,9 @@ public class Drive : MonoBehaviour
                 if (!skidSound.isPlaying)
                     skidSound.Play();
 
-                //StartSkidTrail(i);
                 skidSmoke[i].transform.position = wheelColis[i].transform.position - wheelColis[i].transform.up * wheelColis[i].radius;
                 skidSmoke[i].Emit(1);
             }
-            //else
-                //EndSkidTrail(i);
         }
 
         if (numSkidding == 0 && skidSound.isPlaying)
@@ -159,17 +166,6 @@ public class Drive : MonoBehaviour
             wheelColis[i].GetWorldPose(out position, out quat);
             wheels[i].transform.position = position;
             wheels[i].transform.rotation = quat;
-
-            //if (i == 0 || i == 2)
-            //    wheels[i].transform.rotation = new Quaternion(
-            //        quat.x,
-            //        quat.y,
-            //        quat.z,
-            //        quat.w
-            //    );
-
-            //if (i == 0 || i == 2)
-            //wheels[i].transform.rotation = Quaternion.Inverse(wheels[i].transform.rotation);
         }
     }
 }

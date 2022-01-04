@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RaceMonitor : MonoBehaviour
@@ -15,12 +14,6 @@ public class RaceMonitor : MonoBehaviour
             g.SetActive(false);
 
         StartCoroutine(PlayCountdown());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator PlayCountdown()

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HUDController : MonoBehaviour
@@ -13,7 +11,7 @@ public class HUDController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<CanvasGroup>().alpha = 0;
+        GetComponent<CanvasGroup>().alpha = 0;
 
         if (PlayerPrefs.HasKey("showMiniMap"))
             showMiniMap = PlayerPrefs.GetInt("showMiniMap");
@@ -58,6 +56,6 @@ public class HUDController : MonoBehaviour
 
     void EnableHUD()
     {
-        this.GetComponent<CanvasGroup>().alpha = 1;
+        GetComponent<CanvasGroup>().alpha = 1;
     }
 }

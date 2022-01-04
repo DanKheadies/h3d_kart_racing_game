@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AltAIController : MonoBehaviour
@@ -9,7 +7,7 @@ public class AltAIController : MonoBehaviour
     private Vector3 target;
 
     private float accuracy = 1f;
-    private float rotSpeed = 2f;
+    //private float rotSpeed = 2f;
     private float speed = 20f;
     private int currentWP = 0;
 
@@ -25,14 +23,9 @@ public class AltAIController : MonoBehaviour
         float distanceToTarget = Vector3.Distance(target, this.transform.position);
         Vector3 direction = target - this.transform.position;
 
-        //this.transform.rotation = Quaternion.Slerp(
-        //    this.transform.rotation, 
-        //    Quaternion.LookRotation(direction), 
-        //    Time.deltaTime * rotSpeed
-        //);
-        this.transform.LookAt(target);
+        transform.LookAt(target);
 
-        this.transform.Translate(0, 0, speed * Time.deltaTime);
+        transform.Translate(0, 0, speed * Time.deltaTime);
 
         if (distanceToTarget < accuracy)
         {
